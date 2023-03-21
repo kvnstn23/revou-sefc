@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="calculator">
+        <h2>Kalkulator BMI</h2>
+        <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan yang ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu ? </p>
+        <p>Yuk, hitung sekarang di kalkulator BMI.</p>
+    </div>
+
+    <div class="card">
+        <div class="form-group-jk">
+            <strong>Jenis Kelamin</strong> <br>
+            <input type="radio" name="jenis-kelamin" id="" value="l" required>
+            <label for="jenis-kelamin">Pria</label>
+            <input type="radio" name="jenis-kelamin" id="" value="p" required>
+            <label for="jenis-kelamin">Wanita</label>
+        </div>
+        <div class="form-group">
+            <label for="berat-badan">Berat Badan (Kg)</label>
+            <div class="icon-input">
+                <i class="fa-solid fa-pencil"></i>
+                <input type="number" name="berat-badan" id="" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="usia">Usia (Tahun)</label>
+            <div class="icon-input">
+                <i class="fa-solid fa-pencil"></i>
+                <input type="number" name="usia" id="" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="tinggi-badan">Tinggi Badan (cm)</label>
+            <div class="icon-input">
+                <i class="fa-solid fa-pencil"></i>
+                <input type="number" name="tinggi-badan" id="" required>
+            </div>
+        </div>
+        <div class="button-group">
+            <button id="hitung" class="button" onclick="hitungBMI()">Hitung BMI</button>
+            <button id="reset" class="reset">Reset</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Keunggulan fitur</h3>
+        <p>1. Menghitung berat badan</p>
+        <p>2. Menentukan kategori berat badan ideal atau tidak</p>
+        <p>3. Mempersiapkan program penurunan berat badan</p>
+        <br>
+        <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter</p>
+        <br>
+        <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Indeks Masa Tubuh (atau BMI) dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan Anda (dalam meter) atau BMI = Kg/M<sup>2</sup></p>
+    </div>
+
+    <div id="hasil">
+        <h2>Hasil</h2>
+        <div class="card">
+            <center>
+                <h2 id="hasil1"></h2>
+                <h1 id="hasil2"></h1>
+                <h3 id="hasil3"></h3>
+                <button class="button">Download Hasil BMI</button>
+            </center>
+        </div>
+    </div>
+    <div id="hasill">
+        <center id="hasil7"></center>
+    </div>
+    <div id="hasilll">
+        <p id="hasil4"></p>
+        <p id="hasil5"></p>
+        <p id="hasil6"></p>
+        <div>
+            <button class="button">Konsultasi Ahli Gizi Via Aplikasi</button>
+            <button class="button">Registrasi Online Ahli Gizi</button>
+        </div>
+        <p>BMI tidak sepenuhnya mewakili diagnosis menyeluruh dari kesehatan tubuh dan resiko penyakit seseorang. Anda perlu konsultasi lebih lanjut mengenai resiko dan kekhawatiran Anda terkait dengan berat badan Anda.</p>
+    </div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/index.js"></script> 
+</html>
